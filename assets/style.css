@@ -1,0 +1,117 @@
+html{
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+*, *:after, *:before{
+    box-sizing: inherit;
+}
+
+body{
+    font-family: 'Nunito', sans-serif;
+    font-size: 1.6rem;
+}
+
+.container{
+    max-width: 1200px;
+    width: 80%;
+    margin: 0 auto;
+}
+h1{
+    background: linear-gradient(45deg, rgb(0, 68, 255), rgb(0, 132, 255));
+    padding: 1rem 0px;
+    text-align: center;
+    color: aliceblue;
+    letter-spacing: 3px;
+    word-spacing: 10px;
+}
+
+/* MAIN */
+.body-grid{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+}
+.col{
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0px 0px 15px rgb(181, 199, 214);
+    padding: 2rem;
+}
+
+/* FORMULARIO */
+form{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    row-gap: 1rem;
+}
+form h3{
+    margin: 0px;
+    text-transform: uppercase;
+    font-weight: 300;
+    color: rgb(31, 52, 72);
+}
+ form input[type="text"]{
+    padding: 8px 0px;
+    border: 1px solid rgba(165, 182, 202, 0.434);
+}
+form input[type="text"]:focus{
+    border: none;
+    outline: none;
+    border-bottom: 1px solid rgba(172, 193, 202, 0.696);
+}
+::placeholder {
+    color: rgba(82, 90, 103, 0.427);
+    font-size: 1.5em;
+    padding-left: .5rem;
+    font-weight: 300;
+    font-size: 1.5rem;
+  }
+
+form button{
+    background: rgb(0, 128, 255);
+    padding: 10px 0px;
+    border: none;
+    color: #ffffff;
+    text-transform: uppercase;
+    transition: all ease 0.5s;
+    cursor: pointer;
+}
+form button:hover{
+    background: rgb(0, 110, 255)
+    
+}
+
+
+/* LISTA DE TWEETS */
+ul{
+    list-style: none;
+    padding-inline-start: 0px;
+}
+ul .lista{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+}
+ul .eliminar{
+    background-color: rgb(237, 0, 95);
+    border: none;
+    color: white;
+    border-radius:2px;
+    cursor: pointer;
+    padding: 6px 10px;
+    transition: background-color ease 300ms;
+
+}
+ul .eliminar:hover{
+    background-color: rgb(194, 0, 74);
+}
+li{
+    margin-bottom: 1rem;
+}
+li:last-of-type{
+    margin-bottom: 0px;
+}
+li p{
+    margin: 0px;
+}
