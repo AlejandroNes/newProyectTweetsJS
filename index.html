@@ -12,32 +12,23 @@
 </head>
 <body>
     <div class="container">
-        <h1>MIS TWEETS</h1>
+        <h1 class="titulo">MIS TWEETS</h1>
         <main class="body-grid">
-            <div class="col">
-                <form>
+            <div class="col col1">
+                <form id="formulario">
                     <h3>Agregar Tweet</h3>
                     <input type="text" name="tweet" id="tweet" placeholder="Ingrese un tweet">
-                    <button type="submit">Agregar</button>
+                    <button id="boton" class="boton" type="submit">Agregar</button>
                 </form>
             </div>
             <div class="col">
-                <ul>
-                    <li class="lista">
-                       <p> Aprender JS</p>
-                       <button class="eliminar">x</button>
-                    </li>
-                    <li class="lista">
-                        <p> Aprender JS</p>
-                        <button class="eliminar">x</button>
-                     </li>
-                     <li class="lista">
-                        <p> Aprender JS</p>
-                        <button class="eliminar">x</button>
-                     </li>
+                <ul id="respuesta">
+                    <li style="text-align: center;">~NO HAY TWEETS~</li>           
                 </ul>
             </div>
         </main>
     </div>
+
+    <script src="assets/app.js"></script>
 </body>
 </html> 
